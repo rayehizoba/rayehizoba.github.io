@@ -1,0 +1,308 @@
+<!-- https://www.maciej.co/ -->
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/themes/splide-default.min.css"
+          integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          },
+          fontFamily: {
+            'sans': 'Barlow, Helvetica, Arial, sans-serif',
+            'display': 'Unbounded, cursive',
+            'mono': 'Roboto Mono, monospace',
+          }
+        }
+      }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .nav-link {
+                @apply relative after:absolute after:inset-x-0 after:overflow-y-auto after:-bottom-1 after:h-[2px] after:bg-neutral-500;
+                @apply after:rounded after:transform-gpu after:scale-x-0 hover:after:scale-x-100 after:origin-right;
+                @apply hover:after:origin-left after:duration-300 after:transition after:ease-in-out after:z-10;
+            }
+
+            .btn-link {
+                @apply h-12 flex items-center px-6 rounded-full bg-neutral-900 text-xl active:scale-90 transform-gpu;
+                @apply transition-all duration-300 ease-in-out hover:bg-neutral-800;
+            }
+
+            .btn-link > * {
+                @apply transform-gpu transition-all duration-300 ease-in-out;
+            }
+
+            .btn-link:hover > * {
+                @apply translate-x-6;
+            }
+
+            .btn-round {
+                @apply w-12 h-12 rounded-full bg-gray-700 hover:bg-gray-600 transition-all duration-300;
+                @apply cursor-pointer grid place-content-center active:scale-90 transform-gpu;
+            }
+
+            .fit {
+                display: inline-block;
+                white-space: nowrap;
+            }
+
+            .marquee {
+                @apply w-full h-14;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .marquee ul {
+                display: block;
+                width: 200%;
+                height: 30px;
+
+                position: absolute;
+                overflow: hidden;
+
+                animation: marquee 5s linear infinite;
+            }
+
+            .marquee li {
+                float: left;
+                width: 50%;
+            }
+
+            @keyframes marquee {
+                0% {
+                    left: 0;
+                }
+                100% {
+                    left: -100%;
+                }
+            }
+        }
+    </style>
+</head>
+<body x-data="page" class="bg-black text-white py-1">
+
+<nav class="px-2 flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between font-medium text-lg text-gray-500 tracking-wide">
+    <div class="grid grid-cols-2 lg:w-1/2">
+        <div>
+            Raymond Ehizoba
+        </div>
+        <div class="text-gray-700">
+            Engineer
+        </div>
+    </div>
+    <ul class="hidden lg:flex justify-between lg:w-1/2 space-x-5 lg:space-x-0 whitespace-nowrap">
+        <li>
+            <a href="#" class="nav-link">
+                hi@raymond.co
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link">
+                github
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link">
+                read cv
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link">
+                raymond.eth
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<header class="mx-2 overflow-hidden relative sticky top-0 foo opacity-0">
+    <div class="absolute inset-x-0 top-1/2 transform -translate-y-1/2">
+        <lottie-player
+                src="https://assets7.lottiefiles.com/packages/lf20_otarl9jo.json"
+                background="transparent" loop autoplay></lottie-player>
+        <!--                src="https://assets7.lottiefiles.com/packages/lf20_xsrma5om.json"-->
+        <!--                src="https://assets7.lottiefiles.com/packages/lf20_nevctvni.json"-->
+        <!--                src="https://assets7.lottiefiles.com/packages/lf20_hrEpDJI0qr.json"-->
+    </div>
+    <div class="bg-black mix-blend-multiply">
+        <h1 class="md:!hidden font-display fit transform scale-x-[1.01] -translate-x-px leading-tight">
+            I build
+        </h1>
+        <h1 class="md:!hidden font-display fit transform scale-x-[1.01] -translate-x-px leading-tight">
+            cool stuff
+        </h1>
+        <h1 class="font-display fit transform scale-x-[1.01] -translate-x-px leading-tight !hidden md:!inline-block">
+            I build cool stuff
+        </h1>
+    </div>
+</header>
+
+<div class="space-y-2 z-5 relative tracking-tight w-full overflow-hidden">
+    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+        <p class="text-2xl lg:text-4xl max-w-4xl pb-14">
+            <span class="text-gray-500">Transforming Ideas into Reality:</span>
+            Meet Raymond, the Fullstack Engineer and Head of Engineering at
+            <a href="razorlabs.tech" target="_blank" class="nav-link">Razorlabs</a>,
+            Specializing in Web, Mobile, 3D Modelling, and Product Design.
+            <!--            👋 <span class="text-gray-600">Hello World.</span> I am Raymond and I design interfaces to Ethereum and web3.-->
+            <!--            My work spans across multiple disciplines from interaction design to engineering, branding and art.-->
+            <!--            Currently, I’m the head of development at <a href="#" class="nav-link">Razorlabs</a>.-->
+        </p>
+    </section>
+    <!--    <section class="mx-2">-->
+    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg marquee">-->
+    <!--            <ul class="text-xl">-->
+    <!--                <li>BCL</li>-->
+    <!--                <li>Razorlabs</li>-->
+    <!--                <li>Converge</li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+
+    <template x-for="(project, index) in projects" :key="project.title">
+        <section x-data="carousel(project.slides)" class="gap-2 grid">
+            <div class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                <h1 class="text-2xl lg:text-4xl" x-text="index?'&nbsp;':'Featured Projects'"></h1>
+                <p class="text-2xl lg:text-4xl text-gray-500 mt-20" x-text="project.duration"></p>
+            </div>
+            <div class="mx-2 grid grid-cols-1 lg:grid-cols-4 gap-y-2 lg:gap-2 min-h-[12rem]">
+                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                    <h1 class="text-2xl lg:text-4xl max-w-80" x-text="project.title"></h1>
+                </div>
+                <div class="lg:col-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                    <p class="text-xl text-gray-400 leading-tight" x-text="project.description">
+                    </p>
+                </div>
+                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                    <ul class="text-xl text-gray-500 font-mono">
+                        <template x-for="tag in project.tags"
+                                  :key="tag">
+                            <li class="gap-1 flex">
+                                <div class="h-5 w-5 rounded-full border-2 border-gray-500 mt-1"></div>
+                                <span x-text="tag"></span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2 flex items-end gap-2">
+                    <div class="grid grid-cols-2 gap-2 z-10">
+                        <div class="relative">
+                            <div @click="onPressPrevious" class="btn-round group">
+                                <div class="w-10 h-8 transform rotate-180 -translate-x-3 group-hover:-translate-x-1 transition ease-in-out duration-300 overflow-hidden">
+                                    <img src="./assets/images/arrow_right.svg"
+                                         class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                                         alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div @click="onPressNext" class="btn-round group">
+                                <div class="w-10 h-8 transform translate-x-3 group-hover:translate-x-1 transition ease-in-out duration-300 overflow-hidden">
+                                    <img src="./assets/images/arrow_right.svg"
+                                         class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                                         alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-wrap gap-2">
+                        <template x-for="link in project.links">
+                            <a :href="link.url" target="_blank" class="btn-link group flex-1 whitespace-nowrap">
+                                <span x-text="link.title"></span>
+                                <span class="w-20 h-10 ml-2 overflow-hidden">
+                                    <img src="./assets/images/arrow_right.svg"
+                                         class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                                         alt=""/>
+                                </span>
+                            </a>
+                        </template>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Carousel -->
+            <section x-ref="splide" class="splide w-full"
+                     aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </template>
+
+</div>
+
+<!-- Footer Section -->
+<footer class="mx-2 ">
+    <div class="text-transparent">
+        <h1 class="md:!hidden font-display fit leading-tight">
+            I build
+        </h1>
+        <h1 class="md:!hidden font-display fit leading-tight">
+            cool stuff
+        </h1>
+        <h1 class="font-display fit leading-tight !hidden md:!inline-block">
+            I build cool stuff
+        </h1>
+    </div>
+    <nav class="flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between font-medium text-lg text-gray-500 tracking-wide">
+        <div class="grid grid-cols-2 lg:w-1/2">
+            <div>
+                Raymond Ehizoba
+            </div>
+            <div class="text-gray-700" x-text="'&copy;' + new Date().getFullYear()">
+            </div>
+        </div>
+        <ul class="hidden lg:flex justify-between lg:w-1/2 space-x-5 lg:space-x-0 whitespace-nowrap">
+            <li>
+                <a href="#" class="nav-link">
+                    hi@raymond.co
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    github
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    read cv
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">
+                    raymond.eth
+                </a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+        integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+<script src="assets/js/fitty.min.js"></script>
+<script src="assets/js/page.js"></script>
+</body>
+</html>
