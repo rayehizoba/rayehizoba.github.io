@@ -3,11 +3,11 @@ const projects = [
     title: 'Zaptta',
     duration: '2023',
     tags: [
-      'Mobile',
-      'Web',
+      'iOS',
+      'Android',
+      'Admin Dashboard',
       'Push Notification',
-      'Stripe Payment',
-      'Dashboard'
+      'Payment Integration',
     ],
     description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
       '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
@@ -84,9 +84,10 @@ const projects = [
   // },
   {
     title: 'Immunization Academy\'s IA Learn',
-    duration: '2020—2022',
+    duration: '2021—2023',
     tags: [
-      'Mobile',
+      'E-Learning',
+      'Android',
       'Web',
     ],
     description: 'Train your immunization team in 15 minutes per day — with an app. ' +
@@ -100,8 +101,8 @@ const projects = [
       './assets/images/ia_learn/s1.webp',
       './assets/images/ia_learn/s2.webp',
       './assets/images/ia_learn/s3.png',
-      './assets/images/ia_learn/s4.webp',
       './assets/images/ia_learn/s5.webp',
+      './assets/images/ia_learn/s4.webp',
     ],
     links: [
       {
@@ -116,16 +117,23 @@ const projects = [
   },
   {
     title: 'Razorlabs',
-    duration: '2020—',
-    tags: [],
+    duration: '2022—2023',
+    tags: [
+      'UI/UX Design',
+      'Web',
+    ],
     description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
       '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
       '                        touch-points. I completely overhauled one of web3s most well known products and worked on\n' +
       '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
       '                        vision and narrative.',
     slides: [
-      './assets/images/a1/s1.jpeg',
-      './assets/images/a1/s4.jpeg',
+      'assets/images/razorlabs/IMG_1103.PNG',
+      'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.05 PM.png',
+      'assets/images/razorlabs/IMG_1104.PNG',
+      'assets/images/razorlabs/IMG_1105.PNG',
+      'assets/images/razorlabs/IMG_1106.PNG',
+      'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.30 PM.png',
     ],
     links: [
       {
