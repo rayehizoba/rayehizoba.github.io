@@ -53,8 +53,8 @@ const projects = [
       '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
       '                        vision and narrative.',
     slides: [
-      'assets/images/nexxar/s1.PNG',
-      'assets/images/nexxar/s2.PNG',
+      'assets/images/nexxar/s1.png',
+      'assets/images/nexxar/s2.png',
     ],
     links: [
       {
