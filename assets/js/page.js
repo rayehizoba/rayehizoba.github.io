@@ -15,12 +15,12 @@ const projects = [
       '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
       '                        vision and narrative.',
     slides: [
-      './assets/images/zaptta/s1.PNG',
-      './assets/images/zaptta/s2.PNG',
-      './assets/images/zaptta/s3.PNG',
-      // './assets/images/zaptta/s4.PNG',
-      // './assets/images/zaptta/s5.PNG',
-      './assets/images/zaptta/s6.PNG',
+      'assets/images/zaptta/s1.PNG',
+      'assets/images/zaptta/s2.PNG',
+      'assets/images/zaptta/s3.PNG',
+      // 'assets/images/zaptta/s4.PNG',
+      // 'assets/images/zaptta/s5.PNG',
+      'assets/images/zaptta/s6.PNG',
     ],
     links: [
       {
@@ -53,8 +53,8 @@ const projects = [
       '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
       '                        vision and narrative.',
     slides: [
-      './assets/images/nexxar/s1.PNG',
-      './assets/images/nexxar/s2.PNG',
+      'assets/images/nexxar/s1.PNG',
+      'assets/images/nexxar/s2.PNG',
     ],
     links: [
       {
@@ -73,7 +73,7 @@ const projects = [
   //   ],
   //   description: '',
   //   slides: [
-  //     './assets/images/a1/s1.jpeg',
+  //     'assets/images/a1/s1.jpeg',
   //   ],
   //   links: [
   //     {
@@ -98,11 +98,11 @@ const projects = [
       'With a library of hundreds of training videos to choose from, ' +
       'IA Learn can be customized to target a country\'s performance gaps -- and measurably improve performance.',
     slides: [
-      './assets/images/ia_learn/s1.webp',
-      './assets/images/ia_learn/s2.webp',
-      './assets/images/ia_learn/s3.png',
-      './assets/images/ia_learn/s5.webp',
-      './assets/images/ia_learn/s4.webp',
+      'assets/images/ia_learn/s1.webp',
+      'assets/images/ia_learn/s2.webp',
+      'assets/images/ia_learn/s3.png',
+      'assets/images/ia_learn/s5.webp',
+      'assets/images/ia_learn/s4.webp',
     ],
     links: [
       {
