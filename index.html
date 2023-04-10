@@ -42,8 +42,8 @@
             }
 
             .btn-link {
-                @apply h-12 flex items-center px-6 rounded-full bg-neutral-900 text-xl active:scale-90 transform-gpu;
-                @apply transition-all duration-300 ease-in-out hover:bg-neutral-800;
+                @apply h-12 flex items-center px-6 rounded-full bg-gray-900 text-xl active:scale-90 transform-gpu;
+                @apply transition-all duration-300 ease-in-out hover:bg-gray-800 text-gray-400;
             }
 
             .btn-link > * {
@@ -249,6 +249,84 @@
         </section>
     </template>
 
+    <section class="mx-2 grid gap-2 md:grid-cols-6">
+        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>
+        <a href="#" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">
+            <span>View more on my CV</span>
+            <span class="w-20 h-10 ml-2 overflow-hidden">
+                <img src="./assets/images/arrow_right.svg"
+                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                     alt=""/>
+            </span>
+        </a>
+        <a href="#" target="_blank" class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">
+            <span>👋 &nbsp; Say Hello</span>
+            <span class="w-20 h-10 ml-2 overflow-hidden">
+                <img src="./assets/images/arrow_right.svg"
+                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                     alt=""/>
+            </span>
+        </a>
+        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>
+    </section>
+
+    <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
+        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+            <p class="text-2xl lg:text-4xl sm:w-2/3 mb-12 lg:mb-32">
+                I’m a design generalist working on digital products and brands in the web3 space. I went down the design
+                rabbit hole doing things on the internet like flash websites and Mac themes and after graduating in
+                graphic design in 2010 I started my own studio.
+            </p>
+            <p class="text-2xl lg:text-4xl sm:w-2/3 ml-auto mb-12 lg:mb-32">
+                Since then I’ve been lucky to work with brands big and small, teams of two and companies of thousands,
+                on projects that spanned the many disciplines of contemporary design.
+            </p>
+        </div>
+        <div class="rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg"></div>
+    </section>
+
+    <section class="mx-2 grid gap-2 md:grid-cols-2">
+        <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl"></div>
+        <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl p-3">
+            <p class="text-2xl lg:text-4xl ml-auto mb-12 lg:mb-32">
+                In my design work I pursue the visceral connections we form with digital products. I create opinionated,
+                fun interfaces that invite people to manipulate and play and brands that embrace their communities. My
+                formal education in music made me appreciate the rhythm and structure behind design and became a north
+                star in my process.
+            </p>
+        </div>
+    </section>
+
+    <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
+        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+            <p class="text-2xl lg:text-4xl sm:w-2/3 mt-12 lg:mt-32">
+                I live and work from my home studio in Wrocław, Poland. I enthuse over all things design but also compose electronic music, skateboard, read graphic novels, enjoy and make art, obsess over fashion and vibe with web3 culture.
+            </p>
+        </div>
+        <div class="rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg"></div>
+    </section>
+
+    <section class="mx-2">
+        <ul class="grid sm:grid-cols-3 gap-2">
+            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+                style="background-image: url(./assets/images/selfie.png)">
+            </li>
+            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+                style="background-image: url()">
+            </li>
+            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+                style="background-image: url()">
+            </li>
+        </ul>
+    </section>
+
+    <!--  Outro Section  -->
+    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+        <p class="text-2xl lg:text-4xl sm:w-1/2 ml-auto mb-12 sm:mb-0 sm:mt-24">
+            I consider myself incredibly lucky to have worked with some amazing people, who enabled and helped me do my
+            best work. I’d like to thank y’all, you know who you are.
+        </p>
+    </section>
 </div>
 
 <!-- Footer Section -->

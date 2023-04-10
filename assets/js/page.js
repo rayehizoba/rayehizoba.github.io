@@ -1,4 +1,5 @@
 const projects = [
+  // Zaptta
   {
     title: 'Zaptta',
     duration: '2023',
@@ -20,7 +21,9 @@ const projects = [
       'assets/images/zaptta/s3.PNG',
       // 'assets/images/zaptta/s4.PNG',
       // 'assets/images/zaptta/s5.PNG',
+      'assets/images/zaptta/Screenshot 2023-04-10 at 1.30.49 AM.png',
       'assets/images/zaptta/s6.PNG',
+      'assets/images/zaptta/Screenshot 2023-04-10 at 1.31.53 AM.png',
     ],
     links: [
       {
@@ -37,32 +40,33 @@ const projects = [
       },
     ]
   },
-  {
-    title: 'Nexxar - Robot Car',
-    duration: '2023',
-    tags: [
-      'Product Design',
-      '3D Modelling',
-      'Prototyping',
-      'Robotics',
-      'Mobile',
-    ],
-    description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
-      '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
-      '                        touch-points. I completely overhauled one of web3s most well known products and worked on\n' +
-      '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
-      '                        vision and narrative.',
-    slides: [
-      'assets/images/nexxar/s1.png',
-      'assets/images/nexxar/s2.png',
-    ],
-    links: [
-      {
-        title: 'Homepage',
-        url: 'https://google.com'
-      },
-    ]
-  },
+  // Nexxar - Robot Car
+  // {
+  //   title: 'Nexxar - Robot Car',
+  //   duration: '2023',
+  //   tags: [
+  //     'Product Design',
+  //     '3D Modelling',
+  //     'Prototyping',
+  //     'Robotics',
+  //     'Mobile',
+  //   ],
+  //   description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
+  //     '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
+  //     '                        touch-points. I completely overhauled one of web3s most well known products and worked on\n' +
+  //     '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
+  //     '                        vision and narrative.',
+  //   slides: [
+  //     'assets/images/nexxar/s1.png',
+  //     'assets/images/nexxar/s2.png',
+  //   ],
+  //   links: [
+  //     {
+  //       title: 'Homepage',
+  //       url: 'https://google.com'
+  //     },
+  //   ]
+  // },
   // {
   //   title: 'Hydroponic Farm',
   //   duration: '2023',
@@ -82,6 +86,7 @@ const projects = [
   //     },
   //   ]
   // },
+  // IA Learn
   {
     title: 'Immunization Academy\'s IA Learn',
     duration: '2021—2023',
@@ -115,6 +120,7 @@ const projects = [
       }
     ]
   },
+  // RazorLabs
   {
     title: 'Razorlabs',
     duration: '2022—2023',
