@@ -10,20 +10,22 @@ const projects = [
       'Push Notification',
       'Payment Integration',
     ],
-    description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
-      '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
-      '                        touch-points. I completely overhauled one of web3s most well known products and worked on\n' +
-      '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
-      '                        vision and narrative.',
+    description: 'As a highly skilled full-stack developer, I initiated and successfully executed the creation of ' +
+      'ZAPTTA\'s web and mobile applications on a freelance basis. My responsibilities included developing and ' +
+      'implementing a real-time appointment broadcasting system, which has significantly streamlined operations and ' +
+      'increased customer satisfaction. Furthermore, I continuously maintain and enhance the system with cutting-edge ' +
+      'features to meet evolving business needs.',
     slides: [
-      'assets/images/zaptta/s1.PNG',
-      'assets/images/zaptta/s2.PNG',
-      'assets/images/zaptta/s3.PNG',
-      // 'assets/images/zaptta/s4.PNG',
-      // 'assets/images/zaptta/s5.PNG',
-      'assets/images/zaptta/Screenshot 2023-04-10 at 1.30.49 AM.png',
-      'assets/images/zaptta/s6.PNG',
-      'assets/images/zaptta/Screenshot 2023-04-10 at 1.31.53 AM.png',
+      'assets/images/zaptta/2688x1242bb.png',
+      'assets/images/zaptta/2688x1242bb1.png',
+      'assets/images/zaptta/1242x2688bb.png',
+      'assets/images/zaptta/1242x2688bb1.png',
+      'assets/images/zaptta/1242x2688bb2.png',
+      'assets/images/zaptta/2688x1242bb3.png',
+      'assets/images/zaptta/1242x2688bb (1).png',
+      'assets/images/zaptta/1242x2688bb (2).png',
+      'assets/images/zaptta/1242x2688bb (3).png',
+      'assets/images/zaptta/1242x2688bb (4).png',
     ],
     links: [
       {
@@ -163,11 +165,12 @@ function carousel(slides) {
 
     init() {
       this.splide = new Splide(this.$refs.splide, {
+        lazyLoad: 'nearby',
         rewind: true,
         padding: '0.5rem',
         drag: 'free',
         snap: true,
-        height: '93vh',
+        height: '85vh',
         autoWidth: true,
         arrows: false,
         pagination: false,
