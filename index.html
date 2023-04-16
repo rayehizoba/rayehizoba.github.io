@@ -64,36 +64,32 @@
                 white-space: nowrap;
             }
 
-            .marquee {
-                @apply w-full h-14;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .marquee ul {
-                display: block;
-                width: 200%;
-                height: 30px;
-
-                position: absolute;
-                overflow: hidden;
-
-                animation: marquee 5s linear infinite;
-            }
-
+            /*.marquee {*/
+            /*    @apply w-full h-14;*/
+            /*    overflow: hidden;*/
+            /*    position: relative;*/
+            /*}*/
+            /*.marquee ul {*/
+            /*    display: block;*/
+            /*    width: 200%;*/
+            /*    height: 30px;*/
+            /*    position: absolute;*/
+            /*    overflow: hidden;*/
+            /*    animation: marquee 5s linear infinite;*/
+            /*}*/
             .marquee li {
                 float: left;
                 width: 50%;
             }
 
-            @keyframes marquee {
-                0% {
-                    left: 0;
-                }
-                100% {
-                    left: -100%;
-                }
-            }
+            /*@keyframes marquee {*/
+            /*    0% {*/
+            /*        left: 0;*/
+            /*    }*/
+            /*    100% {*/
+            /*        left: -100%;*/
+            /*    }*/
+            /*}*/
         }
     </style>
 </head>
@@ -166,15 +162,30 @@
             <!--            Currently, I’m the head of development at <a href="#" class="nav-link">Razorlabs</a>.-->
         </p>
     </section>
-    <!--    <section class="mx-2">-->
-    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg marquee">-->
-    <!--            <ul class="text-xl">-->
-    <!--                <li>BCL</li>-->
-    <!--                <li>Razorlabs</li>-->
-    <!--                <li>Converge</li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </section>-->
+    <section class="mx-2">
+        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg py-8">
+            <section x-ref="marquee" class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide mx-7">
+                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg" alt="ZAPTTA"/>
+                        </li>
+                        <li class="splide__slide mx-7">
+                            <img class="h-full grayscale opacity-25" src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
+                                 alt="Immunization Academy"/>
+                        </li>
+                        <li class="splide__slide mx-7">
+                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg" alt="ZAPTTA"/>
+                        </li>
+                        <li class="splide__slide mx-7">
+                            <img class="h-full grayscale opacity-25" src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
+                                 alt="Immunization Academy"/>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
 
 
     <template x-for="(project, index) in projects" :key="project.title">
@@ -259,7 +270,8 @@
                      alt=""/>
             </span>
         </a>
-        <a href="mailto://rayehizoba@gmail.com" target="_blank" class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">
+        <a href="mailto://rayehizoba@gmail.com" target="_blank"
+           class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">
             <span>👋 &nbsp; Say Hello</span>
             <span class="w-20 h-10 ml-2 overflow-hidden">
                 <img src="./assets/images/arrow_right.svg"
@@ -382,6 +394,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
 <script src="//unpkg.com/alpinejs" defer></script>
 <script src="assets/js/fitty.min.js"></script>
 <script src="assets/js/page.js"></script>

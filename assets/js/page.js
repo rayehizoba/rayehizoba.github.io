@@ -155,6 +155,23 @@ const projects = [
 document.addEventListener('alpine:init', () => {
   Alpine.data('page', () => ({
     projects,
+
+    init() {
+      new Splide(this.$refs.marquee, {
+        type: 'loop',
+        drag: 'free',
+        pagination: false,
+        arrows: false,
+        height   : '2rem',
+        focus    : 'center',
+        autoWidth: true,
+        autoScroll: {
+          speed: 1,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+        },
+      }).mount(window.splide.Extensions);
+    }
   }))
 })
 
@@ -195,8 +212,6 @@ function carousel(slides) {
     }
   }
 }
-
-
 
 
 const player = document.querySelector("lottie-player");
