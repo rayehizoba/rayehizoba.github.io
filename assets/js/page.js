@@ -34,7 +34,7 @@ const projects = [
       },
       {
         title: 'Play Store',
-        url: 'https://zaptta.com/help'
+        url: 'https://play.google.com/store/apps/details?id=com.zaptta'
       },
       // {
       //   title: 'Homepage',
