@@ -30,16 +30,16 @@ const projects = [
     links: [
       {
         title: 'App Store',
-        url: 'https://google.com'
+        url: 'https://zaptta.com/help'
       },
       {
         title: 'Play Store',
-        url: 'https://google.com'
+        url: 'https://zaptta.com/help'
       },
-      {
-        title: 'Homepage',
-        url: 'https://zaptta.com'
-      },
+      // {
+      //   title: 'Homepage',
+      //   url: 'https://zaptta.com'
+      // },
     ]
   },
   // Nexxar - Robot Car
@@ -89,71 +89,73 @@ const projects = [
   //   ]
   // },
   // IA Learn
-  // {
-  //   title: 'Immunization Academy\'s IA Learn',
-  //   duration: '2021—2023',
-  //   tags: [
-  //     'E-Learning',
-  //     'Android',
-  //     'Web',
-  //   ],
-  //   description: 'Train your immunization team in 15 minutes per day — with an app. ' +
-  //     'The IA Learn app enables countries to build the capacity of EPI staff ' +
-  //     'through short instructional videos and tests, taking just 15 minutes per session. ' +
-  //     'Unlike traditional training, the IA Learn app increases skill and knowledge retention over time ' +
-  //     'and reduces disruption to work. It puts knowledge right into people\'s hands. ' +
-  //     'With a library of hundreds of training videos to choose from, ' +
-  //     'IA Learn can be customized to target a country\'s performance gaps -- and measurably improve performance.',
-  //   slides: [
-  //     'assets/images/ia_learn/s1.webp',
-  //     'assets/images/ia_learn/s2.webp',
-  //     'assets/images/ia_learn/s3.png',
-  //     'assets/images/ia_learn/s5.webp',
-  //     'assets/images/ia_learn/s4.webp',
-  //   ],
-  //   links: [
-  //     {
-  //       title: 'Homepage',
-  //       url: 'https://immunizationacademy.com/en/learn_android_app'
-  //     },
-  //     {
-  //       title: 'Play Store',
-  //       url: 'https://play.google.com/store/apps/details?id=com.bullcitylearning.ialearn'
-  //     }
-  //   ]
-  // },
+  {
+    title: 'Immunization Academy\'s IA Learn',
+    duration: '2021—2023',
+    tags: [
+      'E-Learning',
+      'Android',
+      'Web',
+    ],
+    description: 'Train your immunization team in 15 minutes per day — with an app. ' +
+      'The IA Learn app enables countries to build the capacity of EPI staff ' +
+      'through short instructional videos and tests, taking just 15 minutes per session. ' +
+      'Unlike traditional training, the IA Learn app increases skill and knowledge retention over time ' +
+      'and reduces disruption to work. It puts knowledge right into people\'s hands. ' +
+      'With a library of hundreds of training videos to choose from, ' +
+      'IA Learn can be customized to target a country\'s performance gaps -- and measurably improve performance.',
+    slides: [
+      'assets/images/ia_learn/s1.webp',
+      'assets/images/ia_learn/s2.webp',
+      'assets/images/ia_learn/s3.png',
+      'assets/images/ia_learn/s5.webp',
+      'assets/images/ia_learn/s4.webp',
+    ],
+    links: [
+      {
+        title: 'Homepage',
+        url: 'https://immunizationacademy.com/en/learn_android_app'
+      },
+      {
+        title: 'Play Store',
+        url: 'https://play.google.com/store/apps/details?id=com.bullcitylearning.ialearn'
+      }
+    ]
+  },
   // RazorLabs
-  // {
-  //   title: 'Razorlabs',
-  //   duration: '2022—2023',
-  //   tags: [
-  //     'UI/UX Design',
-  //     'Web',
-  //   ],
-  //   description: 'I was the first design hire and head of design at WalletConnect. Here I got to wear all\n' +
-  //     '                        hats: I was responsible for the company rebranding and redesign of all web and printed\n' +
-  //     '                        touch-points. I completely overhauled one of web3s most well known products and worked on\n' +
-  //     '                        introducing completely new ones. I art directed WC\'s brand identity, helped shape its\n' +
-  //     '                        vision and narrative.',
-  //   slides: [
-  //     'assets/images/razorlabs/IMG_1103.PNG',
-  //     'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.05 PM.png',
-  //     'assets/images/razorlabs/IMG_1104.PNG',
-  //     'assets/images/razorlabs/IMG_1105.PNG',
-  //     'assets/images/razorlabs/IMG_1106.PNG',
-  //     'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.30 PM.png',
-  //   ],
-  //   links: [
-  //     {
-  //       title: 'Homepage',
-  //       url: 'https://razorlabs.tech'
-  //     }
-  //   ]
-  // }
+  {
+    title: 'Razorlabs',
+    duration: '2022—2023',
+    tags: [
+      'UI/UX Design',
+      'Web',
+    ],
+    description: 'As the co-founder and lead developer of Razorlabs, my top priority was establishing our online ' +
+      'presence. We take pride in delivering some of the best and most thoughtful tech products in the tech industry, ' +
+      'even as a young and upcoming agency.',
+    slides: [
+      'assets/images/razorlabs/IMG_1103.PNG',
+      'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.05 PM.png',
+      'assets/images/razorlabs/IMG_1104.PNG',
+      'assets/images/razorlabs/IMG_1105.PNG',
+      'assets/images/razorlabs/IMG_1106.PNG',
+      'assets/images/razorlabs/Screenshot 2023-04-08 at 4.26.30 PM.png',
+    ],
+    links: [
+      {
+        title: 'Homepage',
+        url: 'https://razorlabs.tech'
+      }
+    ]
+  }
 ];
 
 document.addEventListener('alpine:init', () => {
   Alpine.data('page', () => ({
+    email_url: 'rayehizoba@gmail.com',
+    resume_url: null,
+    wallet_url: null,
+    github_url: 'https://github.com/rayehizoba',
     projects,
 
     init() {
@@ -171,6 +173,40 @@ document.addEventListener('alpine:init', () => {
           pauseOnFocus: false,
         },
       }).mount(window.splide.Extensions);
+
+      // Create a FontFaceObserver instance for your font
+      const myFont = new FontFaceObserver('Unbounded');
+      const player = document.querySelector("lottie-player");
+
+      // Check if the font has loaded
+      myFont.load().then(function () {
+        fitty('.fit');
+        player && player.play();
+        document.querySelector('.js-fit-group').classList.remove('opacity-0');
+
+        (() => {
+          const fixedElement = document.querySelector('.js-fit-group');
+          let windowHeight = window.innerHeight;
+          const fixedElementHeight = fixedElement.offsetHeight;
+          const lastFooterElement = document.querySelector('footer:last-of-type');
+          const lastFooterElementHeight = lastFooterElement.clientHeight;
+          let endPosition = windowHeight - (lastFooterElementHeight - fixedElementHeight);
+
+          window.addEventListener('scroll', function () {
+            const currentPosition = window.scrollY;
+            const newPosition = (currentPosition / (document.body.clientHeight - windowHeight)) * endPosition;
+            const transformFactor = currentPosition / (document.body.clientHeight - windowHeight);
+            const translateY = (newPosition - fixedElement.clientHeight) * transformFactor;
+
+            fixedElement.style.transform = `translateY(${translateY}px)`;
+          });
+
+          window.addEventListener('resize', function () {
+            windowHeight = window.innerHeight;
+            endPosition = windowHeight - (lastFooterElementHeight - fixedElementHeight);
+          });
+        })();
+      });
     }
   }))
 })
@@ -212,40 +248,3 @@ function carousel(slides) {
     }
   }
 }
-
-
-const player = document.querySelector("lottie-player");
-
-(function () {
-  const fixedElement = document.querySelector('.foo');
-  let windowHeight = window.innerHeight;
-  const fixedElementHeight = fixedElement.offsetHeight;
-  const lastFooterElement = document.querySelector('footer:last-of-type');
-  const lastFooterElementHeight = lastFooterElement.clientHeight;
-  let endPosition = windowHeight - (lastFooterElementHeight - fixedElementHeight);
-
-  window.addEventListener('scroll', function () {
-    const currentPosition = window.scrollY;
-    const newPosition = (currentPosition / (document.body.clientHeight - windowHeight)) * endPosition;
-    const transformFactor = currentPosition / (document.body.clientHeight - windowHeight);
-    const translateY = (newPosition - fixedElement.clientHeight) * transformFactor;
-
-    fixedElement.style.transform = `translateY(${translateY}px)`;
-  });
-
-  window.addEventListener('resize', function () {
-    windowHeight = window.innerHeight;
-    endPosition = windowHeight - (lastFooterElementHeight - fixedElementHeight);
-  });
-
-  // Create a FontFaceObserver instance for your font
-  const myFont = new FontFaceObserver('Unbounded');
-
-  // Check if the font has loaded
-  myFont.load().then(function () {
-    fitty('.fit');
-    player && player.play();
-    document.querySelector('.foo').classList.remove('opacity-0');
-  });
-
-})();

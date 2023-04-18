@@ -64,36 +64,13 @@
                 white-space: nowrap;
             }
 
-            /*.marquee {*/
-            /*    @apply w-full h-14;*/
-            /*    overflow: hidden;*/
-            /*    position: relative;*/
-            /*}*/
-            /*.marquee ul {*/
-            /*    display: block;*/
-            /*    width: 200%;*/
-            /*    height: 30px;*/
-            /*    position: absolute;*/
-            /*    overflow: hidden;*/
-            /*    animation: marquee 5s linear infinite;*/
-            /*}*/
-            .marquee li {
-                float: left;
-                width: 50%;
+            [x-cloak] {
+                display: none !important;
             }
-
-            /*@keyframes marquee {*/
-            /*    0% {*/
-            /*        left: 0;*/
-            /*    }*/
-            /*    100% {*/
-            /*        left: -100%;*/
-            /*    }*/
-            /*}*/
         }
     </style>
 </head>
-<body x-data="page" class="bg-black text-white py-1">
+<body x-data="page" x-cloak class="bg-black text-white py-1">
 
 <nav class="px-2 flex flex-col space-y-3 lg:space-y-0 lg:flex-row lg:items-center lg:justify-between font-medium text-lg text-gray-500 tracking-wide">
     <div class="grid grid-cols-2 lg:w-1/2">
@@ -105,30 +82,29 @@
         </div>
     </div>
     <ul class="hidden lg:flex justify-between lg:w-1/2 space-x-5 lg:space-x-0 whitespace-nowrap">
-        <li>
-            <a href="mailto://rayehizoba@gmail.com" class="nav-link">
-                rayehizoba@gmail.com
+        <li x-show="email_url">
+            <a :href="'mailto://' + email_url" class="nav-link" x-text="email_url">
             </a>
         </li>
-        <li>
-            <a href="https://github.com/rayehizoba" target="_blank" class="nav-link">
+        <li x-show="github_url">
+            <a :href="github_url" target="_blank" class="nav-link">
                 github
             </a>
         </li>
-        <li>
-            <a href="#" class="nav-link">
+        <li x-show="resume_url">
+            <a :href="resume_url" class="nav-link">
                 read cv
             </a>
         </li>
-        <li>
-            <a href="#" class="nav-link">
+        <li x-show="wallet_url">
+            <a :href="wallet_url" class="nav-link">
                 raymond.eth
             </a>
         </li>
     </ul>
 </nav>
 
-<header class="mx-2 overflow-hidden relative sticky top-0 foo opacity-0">
+<header class="mx-2 overflow-hidden relative sticky top-0 js-fit-group opacity-0">
     <div class="absolute inset-x-0 top-1/2 transform -translate-y-1/2">
         <lottie-player
                 src="https://assets7.lottiefiles.com/packages/lf20_otarl9jo.json"
@@ -168,17 +144,21 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide mx-7">
-                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg" alt="ZAPTTA"/>
+                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg"
+                                 alt="ZAPTTA"/>
                         </li>
                         <li class="splide__slide mx-7">
-                            <img class="h-full grayscale opacity-25" src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
+                            <img class="h-full grayscale opacity-25"
+                                 src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
                                  alt="Immunization Academy"/>
                         </li>
                         <li class="splide__slide mx-7">
-                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg" alt="ZAPTTA"/>
+                            <img class="h-full grayscale invert opacity-25" src="/assets/images/zaptta/ZAPTTA-LOGO.svg"
+                                 alt="ZAPTTA"/>
                         </li>
                         <li class="splide__slide mx-7">
-                            <img class="h-full grayscale opacity-25" src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
+                            <img class="h-full grayscale opacity-25"
+                                 src="/assets/images/immunization_academy/IA_Logo_Horiz_Color_Neg.svg"
                                  alt="Immunization Academy"/>
                         </li>
                     </ul>
@@ -260,51 +240,55 @@
         </section>
     </template>
 
-    <section class="mx-2 grid gap-2 md:grid-cols-6">
-        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>
-        <a href="#" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">
-            <span>View more on my CV</span>
-            <span class="w-20 h-10 ml-2 overflow-hidden">
-                <img src="./assets/images/arrow_right.svg"
-                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
-                     alt=""/>
-            </span>
-        </a>
-        <a href="mailto://rayehizoba@gmail.com" target="_blank"
-           class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">
-            <span>👋 &nbsp; Say Hello</span>
-            <span class="w-20 h-10 ml-2 overflow-hidden">
-                <img src="./assets/images/arrow_right.svg"
-                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
-                     alt=""/>
-            </span>
-        </a>
-        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>
-    </section>
+    <!--    <section class="mx-2 grid gap-2 md:grid-cols-6">-->
+    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>-->
+    <!--        <a href="#" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">-->
+    <!--            <span>View more on my CV</span>-->
+    <!--            <span class="w-20 h-10 ml-2 overflow-hidden">-->
+    <!--                <img src="./assets/images/arrow_right.svg"-->
+    <!--                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"-->
+    <!--                     alt=""/>-->
+    <!--            </span>-->
+    <!--        </a>-->
+    <!--        <a href="mailto://rayehizoba@gmail.com" target="_blank"-->
+    <!--           class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">-->
+    <!--            <span>👋 &nbsp; Say Hello</span>-->
+    <!--            <span class="w-20 h-10 ml-2 overflow-hidden">-->
+    <!--                <img src="./assets/images/arrow_right.svg"-->
+    <!--                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"-->
+    <!--                     alt=""/>-->
+    <!--            </span>-->
+    <!--        </a>-->
+    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>-->
+    <!--    </section>-->
 
     <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
         <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
-            <p class="text-2xl lg:text-4xl sm:w-2/3 mb-12 lg:mb-32">
-                I’m a design generalist working on digital products and brands in the web3 space. I went down the design
-                rabbit hole doing things on the internet like flash websites and Mac themes and after graduating in
-                graphic design in 2010 I started my own studio.
+            <p class="text-2xl lg:text-4xl sm:w-2/3 mb-12 lg:mb-24">
+                As a full-stack developer, I create high-quality tech products and brands. My passion for web design
+                began with jQuery and WordPress themes, and since graduating in 2016, I've been bringing clients'
+                visions to life through my freelance agency.
             </p>
-            <p class="text-2xl lg:text-4xl sm:w-2/3 ml-auto mb-12 lg:mb-32">
-                Since then I’ve been lucky to work with brands big and small, teams of two and companies of thousands,
-                on projects that spanned the many disciplines of contemporary design.
+            <p class="text-2xl lg:text-4xl sm:w-2/3 ml-auto mb-12 lg:mb-24">
+                I've gained diverse experience working with clients of all sizes and tackling various software
+                application disciplines.
             </p>
         </div>
         <div class="rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg"></div>
     </section>
 
     <section class="mx-2 grid gap-2 md:grid-cols-2">
-        <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl"></div>
+                <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl">
+
+                </div>
+<!--        <video src="/assets/videos/fa_certificates.mp4" class="h-full bg-neutral-800/75 backdrop-blur-lg rounded-2xl object-cover"-->
+<!--               type="video/mp4" autoplay loop muted playsinline></video>-->
         <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl p-3">
-            <p class="text-2xl lg:text-4xl ml-auto mb-12 lg:mb-32">
-                In my design work I pursue the visceral connections we form with digital products. I create opinionated,
-                fun interfaces that invite people to manipulate and play and brands that embrace their communities. My
-                formal education in music made me appreciate the rhythm and structure behind design and became a north
-                star in my process.
+            <p class="text-2xl lg:text-4xl ml-auto mb-12">
+                I design user-friendly software with engaging interfaces that promote exploration and interaction. With
+                expertise in mathematics and problem-solving, I approach my work with a focus on structure and logical
+                thinking, always optimizing the user experience while supporting brand identities and community
+                engagement.
             </p>
         </div>
     </section>
@@ -356,7 +340,7 @@
             I build cool stuff
         </h1>
     </div>
-    <nav class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:items-center md:justify-between font-medium text-lg text-gray-500 tracking-wide">
+    <nav class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:items-center md:justify-between font-medium text-lg text-gray-500 tracking-wide relative">
         <div class="grid grid-cols-2 md:grid-cols-0 lg:grid-cols-2 lg:w-1/2">
             <div class="md:hidden lg:block">
                 Raymond Ehizoba
@@ -365,23 +349,22 @@
             </div>
         </div>
         <ul class="grid grid-cols-2 gap-3 md:flex md:justify-between lg:w-1/2 md:space-x-5 lg:space-x-0 whitespace-nowrap">
-            <li>
-                <a href="mailto://rayehizoba@gmail.com" class="nav-link">
-                    rayehizoba@gmail.com
+            <li x-show="email_url">
+                <a :href="'mailto://' + email_url" class="nav-link" x-text="email_url">
                 </a>
             </li>
-            <li>
-                <a href="https://github.com/rayehizoba" target="_blank" class="nav-link">
+            <li x-show="github_url">
+                <a :href="github_url" target="_blank" class="nav-link">
                     github
                 </a>
             </li>
-            <li>
-                <a href="#" class="nav-link">
+            <li x-show="resume_url">
+                <a :href="resume_url" class="nav-link">
                     read cv
                 </a>
             </li>
-            <li>
-                <a href="#" class="nav-link">
+            <li x-show="wallet_url">
+                <a :href="wallet_url" class="nav-link">
                     raymond.eth
                 </a>
             </li>
