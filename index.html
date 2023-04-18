@@ -92,7 +92,7 @@
             </a>
         </li>
         <li x-show="resume_url">
-            <a :href="resume_url" class="nav-link">
+            <a :href="resume_url" target="_blank" class="nav-link">
                 read cv
             </a>
         </li>
@@ -240,27 +240,27 @@
         </section>
     </template>
 
-    <!--    <section class="mx-2 grid gap-2 md:grid-cols-6">-->
-    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>-->
-    <!--        <a href="#" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">-->
-    <!--            <span>View more on my CV</span>-->
-    <!--            <span class="w-20 h-10 ml-2 overflow-hidden">-->
-    <!--                <img src="./assets/images/arrow_right.svg"-->
-    <!--                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"-->
-    <!--                     alt=""/>-->
-    <!--            </span>-->
-    <!--        </a>-->
-    <!--        <a href="mailto://rayehizoba@gmail.com" target="_blank"-->
-    <!--           class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">-->
-    <!--            <span>👋 &nbsp; Say Hello</span>-->
-    <!--            <span class="w-20 h-10 ml-2 overflow-hidden">-->
-    <!--                <img src="./assets/images/arrow_right.svg"-->
-    <!--                     class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"-->
-    <!--                     alt=""/>-->
-    <!--            </span>-->
-    <!--        </a>-->
-    <!--        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>-->
-    <!--    </section>-->
+        <section x-show="resume_url && email_url" class="mx-2 grid gap-2 md:grid-cols-6">
+            <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>
+            <a :href="resume_url" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">
+                <span>View more on my CV</span>
+                <span class="w-20 h-10 ml-2 overflow-hidden">
+                    <img src="./assets/images/arrow_right.svg"
+                         class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                         alt=""/>
+                </span>
+            </a>
+            <a :href="'mailto://' + email_url" target="_blank"
+               class="md:col-span-2 xl:col-span-1 btn-link group whitespace-nowrap">
+                <span>👋 &nbsp; Say Hello</span>
+                <span class="w-20 h-10 ml-2 overflow-hidden">
+                    <img src="./assets/images/arrow_right.svg"
+                         class="h-full transform-gpu transition ease-in-out duration-300 -translate-x-3 group-hover:translate-x-0"
+                         alt=""/>
+                </span>
+            </a>
+            <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>
+        </section>
 
     <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
         <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
@@ -358,7 +358,7 @@
                     github
                 </a>
             </li>
-            <li x-show="resume_url">
+            <li x-show="resume_url" target="_blank">
                 <a :href="resume_url" class="nav-link">
                     read cv
                 </a>

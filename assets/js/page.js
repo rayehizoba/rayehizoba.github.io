@@ -153,7 +153,7 @@ const projects = [
 document.addEventListener('alpine:init', () => {
   Alpine.data('page', () => ({
     email_url: 'rayehizoba@gmail.com',
-    resume_url: null,
+    resume_url: 'https://docs.google.com/document/d/1KbM7c5e_sqq2gDrfPAuwa73zRTOt_IqJKf3lbx2k5fg/edit?usp=sharing',
     wallet_url: null,
     github_url: 'https://github.com/rayehizoba',
     projects,
