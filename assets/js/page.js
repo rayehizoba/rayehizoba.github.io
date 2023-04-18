@@ -218,7 +218,7 @@ function carousel(slides) {
 
     init() {
       this.splide = new Splide(this.$refs.splide, {
-        lazyLoad: 'nearby',
+        // lazyLoad: 'nearby',
         rewind: true,
         padding: '0.5rem',
         drag: 'free',
