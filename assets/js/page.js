@@ -164,8 +164,8 @@ document.addEventListener('alpine:init', () => {
         drag: 'free',
         pagination: false,
         arrows: false,
-        height   : '2rem',
-        focus    : 'center',
+        height: '2rem',
+        focus: 'center',
         autoWidth: true,
         autoScroll: {
           speed: 1,
@@ -235,7 +235,11 @@ function carousel(slides) {
       });
       this.splide && this.splide.mount();
       slides.forEach(slide => {
-        this.splide && this.splide.add('<li class="splide__slide mr-2"><img class="h-full rounded-2xl" src="' + slide + '" alt=""/></li>');
+        this.splide && this.splide.add(
+          '<li class="splide__slide mr-2">' +
+          '<img class="h-full rounded-2xl" src="' + slide + '" data-splide-lazy="' + slide + '" alt=""/>' +
+          '</li>'
+        );
       });
     },
 
