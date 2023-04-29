@@ -6,15 +6,17 @@ const projects = [
     tags: [
       'iOS',
       'Android',
-      'Admin Dashboard',
       'Push Notification',
+      'API Integration',
+      'Admin Panel',
       'Payment Integration',
     ],
-    description: 'As a highly skilled full-stack developer, I initiated and successfully executed the creation of ' +
-      'ZAPTTA\'s web and mobile applications on a freelance basis. My responsibilities included developing and ' +
-      'implementing a real-time appointment broadcasting system, which has significantly streamlined operations and ' +
-      'increased customer satisfaction. Furthermore, I continuously maintain and enhance the system with cutting-edge ' +
-      'features to meet evolving business needs.',
+    description: 'Zaptta is a mobile application that helps contractors and service providers find jobs and ' +
+        'leads in their preferred categories and geographic areas. Users sign up by entering their phone number, ' +
+        'email, and business information, and select their preferred job categories and geographic areas. ' +
+        'The app has online and offline modes, and users can only receive notifications for jobs in their ' +
+        'chosen categories and areas. Zaptta comprises three apps, including a website portal and Android ' +
+        'and iOS versions, and uses technologies such as React Native, Laravel PHP, and Firebase.',
     slides: [
       'images/zaptta/2688x1242bb.png',
       'images/zaptta/2688x1242bb1.png',
@@ -93,9 +95,10 @@ const projects = [
     title: 'Immunization Academy\'s IA Learn',
     duration: '2021—2023',
     tags: [
-      'E-Learning',
+      'Ed Tech',
       'Android',
-      'Web',
+      'Multiple Languages',
+      'Manager Dashboard',
     ],
     description: 'Train your immunization team in 15 minutes per day — with an app. ' +
       'The IA Learn app enables countries to build the capacity of EPI staff ' +
@@ -105,11 +108,11 @@ const projects = [
       'With a library of hundreds of training videos to choose from, ' +
       'IA Learn can be customized to target a country\'s performance gaps -- and measurably improve performance.',
     slides: [
-      'images/ia_learn/s1.webp',
-      'images/ia_learn/s2.webp',
+      'images/ia_learn/s1.png',
+      'images/ia_learn/s2.png',
       'images/ia_learn/s3.png',
-      'images/ia_learn/s5.webp',
-      'images/ia_learn/s4.webp',
+      'images/ia_learn/s5.png',
+      'images/ia_learn/s4.png',
     ],
     links: [
       {
@@ -127,12 +130,18 @@ const projects = [
     title: 'Razorlabs',
     duration: '2022—2023',
     tags: [
-      'UI/UX Design',
       'Web',
+      'Mobile',
+      '3D Modelling',
+      'UI/UX',
     ],
-    description: 'As the co-founder and lead developer of Razorlabs, my top priority was establishing our online ' +
-      'presence. We take pride in delivering some of the best and most thoughtful tech products in the tech industry, ' +
-      'even as a young and upcoming agency.',
+    description: 'Razorlabs.tech is a website for a technology company that provides software development, ' +
+        'IT consulting, and outsourcing services to businesses. The company boasts a team of ' +
+        'experienced professionals who are well-versed in the latest technologies and are committed ' +
+        'to delivering high-quality solutions that meet clients\' unique needs. The website provides ' +
+        'information on the company\'s services, portfolio, and team members, as well as contact information ' +
+        'for potential clients to get in touch. The website\'s sleek and modern design is indicative of ' +
+        'the company\'s focus on innovation and cutting-edge technology.',
     slides: [
       'images/razorlabs/IMG_1103.PNG',
       'images/razorlabs/Screenshot 2023-04-08 at 4.26.05 PM.png',
@@ -223,7 +232,7 @@ function carousel(slides) {
         padding: '0.5rem',
         drag: 'free',
         snap: true,
-        height: '85vh',
+        height: '80vh',
         autoWidth: true,
         arrows: false,
         pagination: false,
