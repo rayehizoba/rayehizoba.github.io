@@ -32,7 +32,7 @@ const projects = [
     links: [
       {
         title: 'App Store',
-        url: 'https://zaptta.com/help'
+        url: 'https://apps.apple.com/us/app/zaptta/id1669126768'
       },
       {
         title: 'Play Store',
