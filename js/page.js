@@ -239,6 +239,7 @@ function carousel(slides) {
         breakpoints: {
           640: {
             snap: false,
+            height: '75vh',
           },
         }
       });
