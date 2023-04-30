@@ -4,19 +4,19 @@ const projects = [
     title: 'Zaptta',
     duration: '2023',
     tags: [
-      'iOS',
       'Android',
+      'iOS',
       'Push Notification',
       'API Integration',
-      'Admin Panel',
       'Payment Integration',
+      'Admin Panel',
     ],
     description: 'Zaptta is a mobile application that helps contractors and service providers find jobs and ' +
         'leads in their preferred categories and geographic areas. Users sign up by entering their phone number, ' +
         'email, and business information, and select their preferred job categories and geographic areas. ' +
         'The app has online and offline modes, and users can only receive notifications for jobs in their ' +
-        'chosen categories and areas. Zaptta comprises three apps, including a website portal, Android ' +
-        'and iOS apps, and uses technologies such as React Native, Laravel PHP, and Firebase.',
+        'chosen categories and areas. I worked on the project with Converge Groups as its founding engineer, ' +
+        'laying the groundwork for the product.',
     slides: [
       'images/zaptta/2688x1242bb.png',
       'images/zaptta/2688x1242bb1.png',
@@ -95,7 +95,7 @@ const projects = [
     title: 'Immunization Academy\'s IA Learn',
     duration: '2021—2023',
     tags: [
-      'Ed Tech',
+      'Ed. Tech',
       'Android',
       'Multiple Languages',
       'Manager Dashboard',
@@ -108,11 +108,11 @@ const projects = [
       'With a library of hundreds of training videos to choose from, ' +
       'IA Learn can be customized to target a country\'s performance gaps -- and measurably improve performance.',
     slides: [
+      'images/ia_learn/s4.png',
+      'images/ia_learn/s3.png',
       'images/ia_learn/s1.png',
       'images/ia_learn/s2.png',
-      'images/ia_learn/s3.png',
       'images/ia_learn/s5.png',
-      'images/ia_learn/s4.png',
     ],
     links: [
       {
