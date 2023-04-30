@@ -127,7 +127,7 @@
 </header>
 
 <div class="space-y-2 z-5 relative tracking-tight w-full overflow-hidden">
-    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
         <p class="text-2xl lg:text-4xl max-w-4xl pb-14">
             <span class="text-gray-500">Transforming Ideas into Reality:</span>
             Meet Raymond, the Fullstack Engineer and Head of Engineering at
@@ -139,7 +139,7 @@
         </p>
     </section>
     <section class="mx-2">
-        <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg py-8">
+        <div class="rounded-2xl bg-neutral-800/70 backdrop-blur-xl py-8">
             <section x-ref="marquee" class="splide" aria-label="Basic Structure Example">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -170,19 +170,19 @@
 
     <template x-for="(project, index) in projects" :key="project.title">
         <section x-data="carousel(project.slides)" class="gap-2 grid">
-            <div class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+            <div class="mx-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
                 <h1 class="text-2xl lg:text-4xl" x-text="index?'&nbsp;':'Featured Projects'"></h1>
                 <p class="text-2xl lg:text-4xl text-gray-500 mt-20" x-text="project.duration"></p>
             </div>
             <div class="mx-2 grid grid-cols-1 lg:grid-cols-4 gap-y-2 lg:gap-2 min-h-[12rem]">
-                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
                     <h1 class="text-2xl lg:text-4xl max-w-80" x-text="project.title"></h1>
                 </div>
-                <div class="lg:col-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                <div class="lg:col-span-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
                     <p class="text-xl text-gray-400 leading-tight" x-text="project.description">
                     </p>
                 </div>
-                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+                <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
                     <ul class="text-xl text-gray-500 font-mono">
                         <template x-for="tag in project.tags"
                                   :key="tag">
@@ -241,7 +241,7 @@
     </template>
 
         <section x-show="resume_url && email_url" class="mx-2 grid gap-2 md:grid-cols-6">
-            <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg h-20 md:h-auto"></div>
+            <div class="rounded-2xl bg-neutral-800/70 backdrop-blur-xl h-20 md:h-auto"></div>
             <a :href="resume_url" target="_blank" class="md:col-span-2 xl:col-span-3 btn-link group whitespace-nowrap">
                 <span>View more on my CV</span>
                 <span class="w-20 h-10 ml-2 overflow-hidden">
@@ -259,31 +259,33 @@
                          alt=""/>
                 </span>
             </a>
-            <div class="rounded-2xl bg-neutral-800/75 backdrop-blur-lg"></div>
+            <div class="rounded-2xl bg-neutral-800/70 backdrop-blur-xl"></div>
         </section>
 
     <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
-        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
-            <p class="text-2xl lg:text-4xl sm:w-2/3 mb-12 lg:mb-24">
+        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
+            <p class="text-2xl md:text-3xl xl:text-4xl sm:w-2/3 min-h-1/2 mb-24">
                 As a full-stack developer, I create high-quality tech products and brands. My passion for web design
                 began with jQuery and WordPress themes, and since graduating in 2016, I've been bringing clients'
                 visions to life through my freelance agency.
             </p>
-            <p class="text-2xl lg:text-4xl sm:w-2/3 ml-auto mb-12 lg:mb-24">
+            <p class="text-2xl md:text-3xl xl:text-4xl sm:w-2/3 ml-auto min-h-1/2 mb-24">
                 I've gained diverse experience working with clients of all sizes and tackling various software
                 application disciplines.
             </p>
         </div>
-        <div class="rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg"></div>
+        <div class="rounded-2xl overflow-hidden bg-neutral-800/70 backdrop-blur-xl">
+            <video autoplay muted loop src="./videos/RPReplay_Final1682694387.MP4"></video>
+        </div>
     </section>
 
     <section class="mx-2 grid gap-2 md:grid-cols-2">
-                <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl">
+                <div class="bg-neutral-800/70 backdrop-blur-xl rounded-2xl">
 
                 </div>
-<!--        <video src="/assets/videos/fa_certificates.mp4" class="h-full bg-neutral-800/75 backdrop-blur-lg rounded-2xl object-cover"-->
+<!--        <video src="/assets/videos/fa_certificates.mp4" class="h-full bg-neutral-800/70 backdrop-blur-xl rounded-2xl object-cover"-->
 <!--               type="video/mp4" autoplay loop muted playsinline></video>-->
-        <div class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl p-3">
+        <div class="bg-neutral-800/70 backdrop-blur-xl rounded-2xl p-3">
             <p class="text-2xl lg:text-4xl ml-auto mb-12">
                 I design user-friendly software with engaging interfaces that promote exploration and interaction. With
                 expertise in mathematics and problem-solving, I approach my work with a focus on structure and logical
@@ -294,31 +296,31 @@
     </section>
 
     <section class="mx-2 grid gap-2 md:grid-cols-2 lg:grid-cols-4">
-        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+        <div class="lg:col-span-3 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
             <p class="text-2xl lg:text-4xl sm:w-2/3 mt-12 lg:mt-32">
                 I live and work in Accra, Ghana, from my cozy home studio. I get pumped up by all things tech,
                 but I also like to hit the road, go on hikes, and watch movies for some fun and relaxation.
             </p>
         </div>
-        <div class="rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg"></div>
+        <div class="rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl"></div>
     </section>
 
     <section class="mx-2">
         <ul class="grid sm:grid-cols-3 gap-2">
-            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+            <li class="bg-neutral-800/70 backdrop-blur-xl rounded-2xl aspect-square bg-center bg-cover"
                 style="background-image: url(images/selfie.png)">
             </li>
-            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+            <li class="bg-neutral-800/70 backdrop-blur-xl rounded-2xl aspect-square bg-center bg-cover"
                 style="background-image: url()">
             </li>
-            <li class="bg-neutral-800/75 backdrop-blur-lg rounded-2xl aspect-square bg-center bg-cover"
+            <li class="bg-neutral-800/70 backdrop-blur-xl rounded-2xl aspect-square bg-center bg-cover"
                 style="background-image: url()">
             </li>
         </ul>
     </section>
 
     <!--  Outro Section  -->
-    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/75 backdrop-blur-lg">
+    <section class="mx-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
         <p class="text-2xl lg:text-4xl sm:w-1/2 ml-auto mb-12 sm:mb-0 sm:mt-24">
             I consider myself fortunate to have had the opportunity to collaborate with an exceptional group of
             individuals who have enabled and supported me in producing my finest work. To all of these individuals,
