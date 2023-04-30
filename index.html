@@ -181,11 +181,11 @@
                     </p>
                 </div>
                 <div class="lg:row-span-2 rounded-2xl p-3 bg-neutral-800/70 backdrop-blur-xl">
-                    <ul class="text-xl text-gray-500 font-mono">
+                    <ul class="text-xl text-gray-500/50 font-mono">
                         <template x-for="tag in project.tags"
                                   :key="tag">
                             <li class="gap-1 flex">
-                                <div class="h-5 w-5 rounded-full border-2 border-gray-500 mt-1"></div>
+                                <div class="h-5 w-5 rounded-full border-2 border-gray-500/50 mt-1"></div>
                                 <span x-text="tag"></span>
                             </li>
                         </template>
