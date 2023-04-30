@@ -245,8 +245,8 @@ function carousel(slides) {
       this.splide && this.splide.mount();
       slides.forEach(slide => {
         this.splide && this.splide.add(
-          '<li class="splide__slide bg-neutral-800/70 backdrop-blur-xl mr-2">' +
-          '<img class="h-full rounded-2xl" src="' + slide + '" data-splide-lazy="' + slide + '" alt=""/>' +
+          '<li class="splide__slide mr-2">' +
+          '<img class="h-full rounded-2xl bg-neutral-800/70 backdrop-blur-xl" src="' + slide + '" data-splide-lazy="' + slide + '" alt=""/>' +
           '</li>'
         );
       });
