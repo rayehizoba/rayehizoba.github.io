@@ -1,49 +1,49 @@
 const projects = [
   // Zaptta
-  {
-    title: 'Zaptta',
-    duration: '2023',
-    tags: [
-      'Android',
-      'iOS',
-      'Push Notification',
-      'API Integration',
-      'Payment Integration',
-      'Admin Panel',
-    ],
-    description: 'Zaptta is a mobile application that helps contractors and service providers find jobs and ' +
-        'leads in their preferred categories and geographic areas. Users sign up by entering their phone number, ' +
-        'email, and business information, and select their preferred job categories and geographic areas. ' +
-        'The app has online and offline modes, and users can only receive notifications for jobs in their ' +
-        'chosen categories and areas. I worked on the project with Converge Groups as its founding engineer, ' +
-        'laying the groundwork for the product.',
-    slides: [
-      'images/zaptta/2688x1242bb.png',
-      'images/zaptta/2688x1242bb1.png',
-      'images/zaptta/1242x2688bb.png',
-      'images/zaptta/1242x2688bb1.png',
-      'images/zaptta/1242x2688bb2.png',
-      'images/zaptta/2688x1242bb3.png',
-      'images/zaptta/1242x2688bb (1).png',
-      'images/zaptta/1242x2688bb (2).png',
-      'images/zaptta/1242x2688bb (3).png',
-      'images/zaptta/1242x2688bb (4).png',
-    ],
-    links: [
-      {
-        title: 'App Store',
-        url: 'https://apps.apple.com/us/app/zaptta/id1669126768'
-      },
-      {
-        title: 'Play Store',
-        url: 'https://play.google.com/store/apps/details?id=com.zaptta'
-      },
-      // {
-      //   title: 'Homepage',
-      //   url: 'https://zaptta.com'
-      // },
-    ]
-  },
+  // {
+  //   title: 'Zaptta',
+  //   duration: '2023',
+  //   tags: [
+  //     'Android',
+  //     'iOS',
+  //     'Push Notification',
+  //     'API Integration',
+  //     'Payment Integration',
+  //     'Admin Panel',
+  //   ],
+  //   description: 'Zaptta is a mobile application that helps contractors and service providers find jobs and ' +
+  //       'leads in their preferred categories and geographic areas. Users sign up by entering their phone number, ' +
+  //       'email, and business information, and select their preferred job categories and geographic areas. ' +
+  //       'The app has online and offline modes, and users can only receive notifications for jobs in their ' +
+  //       'chosen categories and areas. I worked on the project with Converge Groups as its founding engineer, ' +
+  //       'laying the groundwork for the product.',
+  //   slides: [
+  //     'images/zaptta/2688x1242bb.png',
+  //     'images/zaptta/2688x1242bb1.png',
+  //     'images/zaptta/1242x2688bb.png',
+  //     'images/zaptta/1242x2688bb1.png',
+  //     'images/zaptta/1242x2688bb2.png',
+  //     'images/zaptta/2688x1242bb3.png',
+  //     'images/zaptta/1242x2688bb (1).png',
+  //     'images/zaptta/1242x2688bb (2).png',
+  //     'images/zaptta/1242x2688bb (3).png',
+  //     'images/zaptta/1242x2688bb (4).png',
+  //   ],
+  //   links: [
+  //     {
+  //       title: 'App Store',
+  //       url: 'https://apps.apple.com/us/app/zaptta/id1669126768'
+  //     },
+  //     {
+  //       title: 'Play Store',
+  //       url: 'https://play.google.com/store/apps/details?id=com.zaptta'
+  //     },
+  //     // {
+  //     //   title: 'Homepage',
+  //     //   url: 'https://zaptta.com'
+  //     // },
+  //   ]
+  // },
   // Nexxar - Robot Car
   // {
   //   title: 'Nexxar - Robot Car',
