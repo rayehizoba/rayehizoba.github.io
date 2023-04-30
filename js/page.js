@@ -15,8 +15,8 @@ const projects = [
         'leads in their preferred categories and geographic areas. Users sign up by entering their phone number, ' +
         'email, and business information, and select their preferred job categories and geographic areas. ' +
         'The app has online and offline modes, and users can only receive notifications for jobs in their ' +
-        'chosen categories and areas. Zaptta comprises three apps, including a website portal and Android ' +
-        'and iOS versions, and uses technologies such as React Native, Laravel PHP, and Firebase.',
+        'chosen categories and areas. Zaptta comprises three apps, including a website portal, Android ' +
+        'and iOS apps, and uses technologies such as React Native, Laravel PHP, and Firebase.',
     slides: [
       'images/zaptta/2688x1242bb.png',
       'images/zaptta/2688x1242bb1.png',
